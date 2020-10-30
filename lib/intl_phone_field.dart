@@ -136,6 +136,8 @@ class IntlPhoneField extends StatefulWidget {
   /// Color of the drop down arrow
   final Color dropDownArrowColor;
 
+  final int maxLength;
+
   TextInputAction textInputAction;
 
   IntlPhoneField(
@@ -163,6 +165,7 @@ class IntlPhoneField extends StatefulWidget {
       this.searchText = 'Search by Country Name',
       this.countryCodeTextColor,
       this.dropDownArrowColor,
+      this.maxLength = 14,
       this.textInputAction});
 
   @override
@@ -298,6 +301,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             keyboardType: widget.keyboardType,
             inputFormatters: widget.inputFormatters,
             enabled: widget.enabled,
+            maxLength: widget.maxLength
             keyboardAppearance: widget.keyboardAppearance,
             textInputAction: widget.textInputAction,
           ),
