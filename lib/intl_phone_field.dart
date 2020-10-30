@@ -301,7 +301,7 @@ class _IntlPhoneFieldState extends State<IntlPhoneField> {
             keyboardType: widget.keyboardType,
             inputFormatters: widget.inputFormatters,
             enabled: widget.enabled,
-            maxLength: widget.maxLength
+            maxLength: widget.maxLength,
             keyboardAppearance: widget.keyboardAppearance,
             textInputAction: widget.textInputAction,
           ),
